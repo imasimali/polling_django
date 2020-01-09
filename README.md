@@ -17,6 +17,10 @@ pipenv shell
 pipenv install django
 ```
 ```bash
+# Change Directory
+cd pollster
+```
+```bash
 # Run initial migrations
 python manage.py migrate
 ```
