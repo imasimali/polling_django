@@ -4,17 +4,27 @@
 
 ## Quick Start
 
-``` bash
-# Install dependencies
-pipenv install
-
-cd pollster
-
-# Serve on localhost:8000
+```bash
+# Install pipenv
+pip install pipenv
+```
+```bash
+# Create Venv
+pipenv shell
+```
+```bash
+# Install Django
+pipenv install django
+```
+```bash
+# Run initial migrations
+python manage.py migrate
+```
+```bash
+# Create admin user
+python manage.py createsuperuser
+```
+```bash
+# Run server on http: 127.0.0.1:8000 (ctrl+c to stop)
 python manage.py runserver
 ```
-
-### Commands Gist
-You can find all of the commands from the project here:
-https://gist.github.com/imasimali/5bdfd5a6aef7337a9506c886fff6f0c3
-
